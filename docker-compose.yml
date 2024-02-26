@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  neo4j:
+    image: neo4j:latest
+    container_name: neo4j
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      NEO4J_AUTH: neo4j/test1234
+    volumes:
+      - ./dbdata/neo4jdata:/data
+  
+  my_python_app:
+    image: j4kr4bbit/ontology:neoGraph-1.0.1
+    build:
+      context: ./Ontology
+      dockerfile: python.Dockerfile
+    container_name: my_python_app_container
+    depends_on:
+      - neo4j
