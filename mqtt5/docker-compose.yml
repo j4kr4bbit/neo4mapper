@@ -1,0 +1,38 @@
+version: "3.7"
+services:
+  mqtt5:
+    image: eclipse-mosquitto
+    container_name: mqtt5
+    ports:
+      - "1883:1883" # Default MQTT port
+      - "9001:9001" # Default MQTT port for websockets
+    volumes:
+      - ./config:/mosquitto/config:rw
+      - ./data:/mosquitto/data:rw
+      - ./log:/mosquitto/log:rw
+    restart: unless-stopped
+
+  publisher:
+    build:
+      context: ./publishingservice
+      dockerfile: python.Dockerfile 
+    container_name: publisher
+    depends_on:
+      - mqtt5
+    restart: unless-stopped
+
+  fastapi_app:
+    build:
+      context: ./fastapi
+      dockerfile: python.Dockerfile # Assuming you have a Dockerfile in ./fastapi
+    container_name: fastapi_app
+    ports:
+      - "8000:8000" # Expose FastAPI on port 8000
+    depends_on:
+      - mqtt5
+    restart: unless-stopped
+
+volumes:
+  config:
+  data:
+  log:
