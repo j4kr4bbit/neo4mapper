@@ -1,0 +1,108 @@
+{
+    "drones": [
+        {
+            "blast_radius": 12.85,
+            "distance": 9078.14,
+            "longitude": -109.600117,
+            "latitude": 31.471395,
+            "timestamp": "2024-03-04T06:47:55Z",
+            "operational": "inactive"
+        },
+        {
+            "blast_radius": 9.49,
+            "distance": 6387.49,
+            "longitude": -109.608055,
+            "latitude": 31.472195,
+            "timestamp": "2024-02-15T00:01:56Z",
+            "operational": "inactive"
+        },
+        {
+            "blast_radius": 3.63,
+            "distance": 4206.22,
+            "longitude": -109.603757,
+            "latitude": 31.456435,
+            "timestamp": "2024-03-02T03:34:13Z",
+            "operational": "active"
+        },
+        {
+            "blast_radius": 2.0,
+            "distance": 7832.58,
+            "longitude": -109.605324,
+            "latitude": 31.463847,
+            "timestamp": "2024-02-19T02:49:39Z",
+            "operational": "active"
+        }
+    ],
+    "jeeps": [
+        {
+            "blast_radius": 0.87,
+            "distance": 7154.01,
+            "longitude": -109.603994,
+            "latitude": 31.470601,
+            "timestamp": "2024-02-14T04:53:48Z",
+            "operational": "active"
+        },
+        {
+            "blast_radius": 1.51,
+            "distance": 1346.78,
+            "longitude": -109.606796,
+            "latitude": 31.476749,
+            "timestamp": "2024-02-25T23:55:27Z",
+            "operational": "active"
+        },
+        {
+            "blast_radius": 6.56,
+            "distance": 8517.67,
+            "longitude": -109.606347,
+            "latitude": 31.466259,
+            "timestamp": "2024-02-14T12:25:02Z",
+            "operational": "inactive"
+        },
+        {
+            "blast_radius": 1.45,
+            "distance": 3407.57,
+            "longitude": -109.605584,
+            "latitude": 31.476728,
+            "timestamp": "2024-02-25T16:18:29Z",
+            "operational": "inactive"
+        }
+    ],
+    "rc_cars": [
+        {
+            "blast_radius": 2.43,
+            "distance": 3117.89,
+            "longitude": -109.601979,
+            "latitude": 31.451198,
+            "timestamp": "2024-02-17T23:03:34Z",
+            "operational": "active"
+        },
+        {
+            "blast_radius": 7.92,
+            "distance": 6869.65,
+            "longitude": -109.608784,
+            "latitude": 31.465065,
+            "timestamp": "2024-02-17T21:29:50Z",
+            "operational": "inactive"
+        },
+        {
+            "blast_radius": 1.33,
+            "distance": 9957.01,
+            "longitude": -109.604638,
+            "latitude": 31.474784,
+            "timestamp": "2024-03-10T10:07:37Z",
+            "operational": "inactive"
+        },
+        {
+            "blast_radius": 13.61,
+            "distance": 1893.81,
+            "longitude": -109.6074,
+            "latitude": 31.451299,
+            "timestamp": "2024-02-11T22:31:47Z",
+            "operational": "active"
+        }
+    ],
+    "bisbee_douglas_airport": {
+        "longitude": -109.6035,
+        "latitude": 31.469
+    }
+}
